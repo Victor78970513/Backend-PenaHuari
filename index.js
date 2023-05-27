@@ -78,27 +78,3 @@ app.listen(3000,()=>{
     console.log('conectado con el backend')
 })
 
-// app.post("/platos",(req,res)=>{
-//     const q = "INSERT INTO comida (`nombre`,`descripcion`,`precio`,`id_seccion`,`imagen`) VALUES (?)"
-//     const values = [
-//         req.body.nombre,
-//         req.body.descripcion,
-//         req.body.precio,
-//         req.body.id_seccion,
-//         req.body.imagen,
-//     ]
-//     db.query(q,[values], (err,data)=>{
-//         if(err) return res.json(err);
-//         return res.json("EL PLATO HA SIDO CREADO CORRECTAMENTE");
-//     });
-// })
-
-// app.post("/platos",(req,res)=>{
-//     const q = "INSERT INTO comida (`nombre`,`descripcion`,`precio`,`id_seccion`,`imagen`) VALUES (?)"
-//     const values = ["nombre desde el backend2","backend funcionando","100",1,'backend.png']
-//     db.query(q,[values], (err,data)=>{
-//         if(err) return res.json(err);
-//         return res.json("EL PLATO HA SIDO CREADO CORRECTAMENTE");
-//     });
-// })
-
