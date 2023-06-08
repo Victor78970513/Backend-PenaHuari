@@ -99,7 +99,7 @@ app.get("/platos",(req,res)=>{
   
 
 app.get("/breakfast", (req,res)=>{
-    const q = "SELECT * FROM comida WHERE comida.id_seccion = 1"
+    const q = "SELECT * FROM Comida WHERE Comida.id_seccion = 1"
     db.query(q,(err,data)=>{
         if(err) return res.json(err)
         return res.json(data)
@@ -107,7 +107,7 @@ app.get("/breakfast", (req,res)=>{
 })
 
 app.get("/lunch", (req,res)=>{
-    const q = "SELECT * FROM comida WHERE comida.id_seccion = 2"
+    const q = "SELECT * FROM Comida WHERE Comida.id_seccion = 2"
     db.query(q,(err,data) => {
         if(err) return res.json(err)
         return res.json(data)
@@ -115,7 +115,7 @@ app.get("/lunch", (req,res)=>{
 })
 
 app.get("/dinner",(req,res)=>{
-    const q = "SELECT * FROM comida WHERE comida.id_seccion = 3"
+    const q = "SELECT * FROM Comida WHERE Comida.id_seccion = 3"
     db.query(q,(err,data)=>{
         if(err) return res.json(err)
         return res.json(data)
@@ -123,7 +123,7 @@ app.get("/dinner",(req,res)=>{
 })
 
 app.get("/drink",(req,res)=>{
-    const q = "SELECT * FROM comida WHERE comida.id_seccion = 4"
+    const q = "SELECT * FROM Comida WHERE Comida.id_seccion = 4"
     db.query(q,(err,data)=>{
         if(err) return res.json(err)
         return res.json(data)
@@ -131,7 +131,7 @@ app.get("/drink",(req,res)=>{
 })
 
 app.get("/dessert",(req,res)=>{
-    const q = "SELECT * FROM comida WHERE comida.id_seccion = 5"
+    const q = "SELECT * FROM Comida WHERE Comida.id_seccion = 5"
     db.query(q,(err,data)=>{
         if(err) return res.json(err)
         return res.json(data)
